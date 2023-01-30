@@ -1,0 +1,263 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/*Global CSS*/
+body{
+	font-family: 'Lato', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+
+/*header Section CSS*/
+header{
+	padding: 25px 0;
+	background: #fff;
+}
+
+/*Banner Section CSS*/
+.banner-section{
+	background: url(../img/bg-banner.png) no-repeat center top;
+	background-size: cover;
+	padding: 250px 0;
+}
+.banner-section h2{
+	font-size: 75px;
+    color: #fff;
+    font-weight: 700;
+}
+.banner-section p{
+	margin-bottom: 40px;
+    color: #d8d8db;
+}
+.title-seperator{
+	width: 40%;
+	height: 2px;
+	background: #15a4fa;
+	margin: 30px auto;
+	display: block;
+}
+.btn-action{
+	position: relative;
+	padding: 12px 40px;
+	border: 2px solid #15a4fa;
+	color: #d8d8db;
+	background: transparent;
+	border-radius: 5px;	 
+	z-index: 1;
+    overflow: hidden;
+}
+.btn-action::after{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: -100%;
+	transition: 0.3s ease-in-out;
+	background: #fff;
+	z-index: -1;
+}
+.btn-action:hover::after{
+	left: 0;
+}
+.btn-action:hover{
+	color: #000;
+	font-weight: 700;
+}
+
+/*Design Section CSS*/
+.design-section{
+	padding: 50px 0;
+	background: #f6f9f9;
+}
+.design-section p{
+	font-size: 16px;
+    padding: 0 150px;
+    color: #a0a0a0;
+}
+
+/*icon-section CSS*/
+.icon-section{
+	padding: 40px 0;
+	background: #fff;
+}
+.icon-section .fa{
+	background: #48baff;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 77px;
+    font-size: 40px;
+    border-radius: 3px;
+}
+.icon-section h5{
+	margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.icon-section p{
+	font-size: 14px;
+    color: #b0b0b0;
+    margin-top: 20px;
+}
+
+/*Portfolio Section CSS*/
+.portfolio{
+	padding: 75px 0;
+	background: #f6f9f9;
+}
+.section-title{
+	padding-bottom: 75px;
+}
+.section-title h2{
+	text-align: center;
+}
+.section-title p{
+	text-align: center;
+}
+.item{
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+	height: 296.5px;
+	margin-bottom: 30px;
+}
+.item-hover{
+	position: absolute;
+	width: 100%;
+	height: 296.5px;
+	top: 0;
+	left: 0;
+	background: rgba(44,172,247, .9);
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+.item:hover .item-hover{
+	opacity: 1;
+}
+.item img{
+	transition: 0.5s ease-in-out;
+	
+}
+.item:hover img{
+	transform: scale(1.2);
+}
+.item-hover ul{
+	padding: 0;
+	text-align: center;
+}
+.item-hover ul li {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    margin: 0 5px;
+    font-size: 24px;
+    line-height: 45px;
+    margin-top: 28%;
+}
+.item-hover ul li a .fa{
+	color: #fff;
+}
+
+/*contact-section CSS*/
+.contact-section{
+	padding: 150px 0;
+	background: url(../img/bg-concact.png) no-repeat center top;
+	background-size: cover;
+}
+.contact-section h2{
+	color: #fff;
+}
+.contact-section p{
+	color: #848589;	
+}
+.contact-section .from-control{
+	width: 40%;
+    padding: 10px;
+    border: 1px solid #999999;
+    background: transparent;
+    margin-top: 10px;
+}
+.contact-section .from-control:focus{
+	box-shadow: none;
+	outline: none;
+}
+.contact-section textarea{
+    width: 40%;
+    margin: 18px auto;
+    background: transparent;
+    border: 1px solid #999999;
+}
+.contact-section textarea:focus{
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+}
+.form-check .form-check-input{
+   float: none;
+   margin: 5px;
+}
+.form-check .form-check-input:focus{
+	outline: none;
+	box-shadow: none;
+}
+.form-check{
+	color: #fff;
+}
+.btn-send{
+    background: transparent;
+    color: #fff;
+    width: 10%;
+    text-transform: uppercase;
+    padding: 8px;
+    letter-spacing: 2px;
+    border: 1px solid #15a4fa;
+    margin: 5px 0;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+.btn-send:hover{
+	color: #fff;
+	background: #000;
+	border: none;
+}
+
+/*Footer CSS*/
+.footer-section{
+	padding: 20px 0px 7px;
+    background: #fff;;
+	background: #fff;
+}
+.footer-section p{
+	color: #999999;
+}
+.footer-section ul li{
+	text-align: right;
+}
+.footer-section .fa{
+	margin: 0 5px;
+    font-size: 16px;
+    background: #15a4fa;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+.footer-section .fa:hover{
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+}
